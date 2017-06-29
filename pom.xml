@@ -50,11 +50,6 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- Data model -->
-		<dependency>
-			<groupId>com.nordstrom.payment</groupId>
-			<artifactId>paymentdata</artifactId>
-			<version>1.0.0.12</version>
-		</dependency>
 	</dependencies>
 
 	<properties>
