@@ -6,12 +6,14 @@ package testbasic.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import paymentdata.model.Transaction;
+//import paymentdata.model.Transaction;
 
 /**
  * @author x3fm
  * Stub data source for testing.
  */
+/**
+
 public class TestBasicServiceStub {
 	
 	public static List<Transaction> getListTransaction() {
@@ -41,3 +43,4 @@ public class TestBasicServiceStub {
 	}
 
 }
+*/

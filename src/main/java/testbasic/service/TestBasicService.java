@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
+/**
 import paymentdata.model.Transaction;
 import paymentdata.model.TransactionResponse;
 import paymentdata.vantiv.AuthorizationRequest;
@@ -18,7 +18,9 @@ import paymentdata.vantiv.TokenizationRequest;
  * @author x3fm
  *
  */
-@Service
+//@Service
+/**
+
 public interface TestBasicService {
 	
 	List<Transaction> getListOfTransaction();
@@ -27,3 +29,4 @@ public interface TestBasicService {
 	ResponseEntity<TransactionResponse> authorizationReversal(AuthorizationReversalRequest requeset);
 
 }
+*/

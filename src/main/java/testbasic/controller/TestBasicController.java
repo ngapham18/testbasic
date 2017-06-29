@@ -19,14 +19,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.support.HttpRequestHandlerServlet;
 
-import paymentdata.model.Transaction;
-import paymentdata.model.TransactionResponse;
-import paymentdata.vantiv.AuthorizationRequest;
-import paymentdata.vantiv.AuthorizationReversalRequest;
-import paymentdata.vantiv.TokenizationRequest;
+//import paymentdata.model.Transaction;
+//import paymentdata.model.TransactionResponse;
+//import paymentdata.vantiv.AuthorizationRequest;
+//import paymentdata.vantiv.AuthorizationReversalRequest;
+//import paymentdata.vantiv.TokenizationRequest;
 import testbasic.model.User;
 import testbasic.repository.TestBasicRepository;
-import testbasic.service.TestBasicServiceImp;
+//import testbasic.service.TestBasicServiceImp;
 
 /**
  * @author x3fm
@@ -37,8 +37,8 @@ import testbasic.service.TestBasicServiceImp;
 @RequestMapping("/api/v1")
 public class TestBasicController extends AbstractTestBasicController{
 	
-	@Autowired 
-	private TestBasicServiceImp testService;
+	//@Autowired 
+	//private TestBasicServiceImp testService;
 	
 	@Autowired
 	private TestBasicRepository repository;
@@ -119,7 +119,7 @@ public class TestBasicController extends AbstractTestBasicController{
 	
 	/**
 	 * get list of transactions
-	 */
+	
 	@RequestMapping(value   = "/transactions",
 					method  = RequestMethod.GET,
 					consumes	= MediaType.APPLICATION_JSON_VALUE,
@@ -130,11 +130,11 @@ public class TestBasicController extends AbstractTestBasicController{
 	
 	/**
 	 * create Authorization code
-	 */
+	 
 	@RequestMapping(value  = "/authorizations",
 					method = RequestMethod.POST,
 					consumes	= MediaType.APPLICATION_JSON_VALUE,
-					produces = MediaType.APPLICATION_JSON_VALUE)
+	/**				produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<TransactionResponse> authorization(@RequestBody AuthorizationRequest authRequest) {
 		return testService.authorization(authRequest);
 	}
@@ -142,7 +142,7 @@ public class TestBasicController extends AbstractTestBasicController{
 	/**
 	 * create High value token 
 	 * test adding 
-	 */
+	 
 	@RequestMapping(value = "/tokenizations",
 					method = RequestMethod.POST,
 					consumes	= MediaType.APPLICATION_JSON_VALUE,
@@ -153,7 +153,7 @@ public class TestBasicController extends AbstractTestBasicController{
 	
 	/**
 	 * create AuthorizationReversal request
-	 */
+	
 	@RequestMapping(value = "/authorizationreversals",
 					method = RequestMethod.POST,
 					consumes	= MediaType.APPLICATION_JSON_VALUE,
@@ -161,4 +161,6 @@ public class TestBasicController extends AbstractTestBasicController{
 	public ResponseEntity<TransactionResponse> authorizationReversal(@RequestBody AuthorizationReversalRequest reversalRequest) {
 		return testService.authorizationReversal(reversalRequest);
 	}
+	*/
+
 }
